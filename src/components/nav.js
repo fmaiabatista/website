@@ -1,11 +1,11 @@
 import React from "react"
-import styles from "./nav.module.css"
+import s from "./nav.module.css"
 import { Link } from "gatsby"
 
 export default () => (
-  <nav>
+  <nav className={s.nav}>
     logo
-    <ul>
+    <ul className={s.list}>
       <li>
         <Link to="/">Home</Link>
       </li>
@@ -14,6 +14,9 @@ export default () => (
       </li>
       <li>
         <Link to="/uses/">Uses</Link>
+      </li>
+      <li>
+        <Link to="/resources/">Resources</Link>
       </li>
     </ul>
   </nav>

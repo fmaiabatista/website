@@ -7,7 +7,6 @@ export default () => (
   <Container>
     <Nav />
     <Header text="About" />
-    <p>* TODO - Have a flipping card on this page</p>
     <p>Frontend Developer</p>
     <ul>
       <li>React</li>

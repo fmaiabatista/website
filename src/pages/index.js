@@ -6,7 +6,7 @@ import Header from "../components/header"
 export default () => (
   <Container>
     <Nav />
-    <Header text='Welcome' />
+    <Header text="Welcome" />
     <p>This is my website</p>
   </Container>
 )
