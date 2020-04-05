@@ -1,11 +1,13 @@
-import React from "react"
-import s from "./nav.module.css"
-import { Link } from "gatsby"
+import React from "react";
+import styles from "./nav.module.css";
+import { Link } from "gatsby";
 
 export default () => (
-  <nav className={s.nav}>
-    logo
-    <ul className={s.list}>
+  <nav className={styles.nav}>
+    <span role="img" aria-label="man technologist">
+      👨‍💻 Felipe Maia
+    </span>
+    <ul className={styles.list}>
       <li>
         <Link to="/">Home</Link>
       </li>
@@ -20,4 +22,4 @@ export default () => (
       </li>
     </ul>
   </nav>
-)
+);

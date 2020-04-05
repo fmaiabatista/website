@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  padding-top: 1.16rem;
 }
 
 .nav .list {

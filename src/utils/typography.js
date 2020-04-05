@@ -1,14 +1,7 @@
-import Typography from "typography"
-import fairyGateTheme from "typography-theme-fairy-gates"
+import Typography from "typography";
+import altonTheme from "typography-theme-alton";
 
-// https://kyleamathews.github.io/typography.js/ - Customizing Themes
-fairyGateTheme.overrideThemeStyles = options => ({
-  html: {
-    overflowY: "auto",
-  },
-})
+const typography = new Typography(altonTheme);
 
-const typography = new Typography(fairyGateTheme)
-
-export const { scale, rhythm, options } = typography
-export default typography
+export const { scale, rhythm, options } = typography;
+export default typography;

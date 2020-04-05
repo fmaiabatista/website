@@ -1,17 +1,22 @@
-import React from "react"
-import Container from "../components/container"
-import Nav from "../components/nav"
-import Header from "../components/header"
+import React from "react";
+import Layout from "../components/layout";
 
-export default () => (
-  <Container>
-    <Nav />
-    <Header text="About" />
-    <p>Frontend Developer</p>
+const About = () => (
+  <Layout>
+    <h1>About</h1>
+    <p>Coming soon</p>
+    <p>
+      <span role="img" aria-label="building construction">
+        🚧🏗️
+      </span>
+    </p>
+    {/* <p>Frontend Developer</p>
     <ul>
       <li>React</li>
       <li>JS / Typescript</li>
       <li>CSS</li>
-    </ul>
-  </Container>
-)
+    </ul> */}
+  </Layout>
+);
+
+export default About;

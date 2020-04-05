@@ -1,15 +1,19 @@
-import React from "react"
-import Container from "../components/container"
-import Nav from "../components/nav"
-import Header from "../components/header"
+import React from "react";
+import Layout from "../components/layout";
 
-export default () => (
-  <Container>
-    <Nav />
-    <Header text="Uses" />
+const Uses = () => (
+  <Layout>
+    <h1>Uses</h1>
     <p>
-      Here's a list of utility apps and general configs I use in different
-      platforms
+      Here's a list of utility apps and general configs I use for different
+      situations:
     </p>
-  </Container>
-)
+    <p>
+      <span role="img" aria-label="building construction">
+        🚧🏗️
+      </span>
+    </p>
+  </Layout>
+);
+
+export default Uses;

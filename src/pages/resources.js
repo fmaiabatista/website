@@ -1,12 +1,14 @@
-import React from "react"
-import Container from "../components/container"
-import Nav from "../components/nav"
-import Header from "../components/header"
+import React from "react";
+import Layout from "../components/layout";
 
 export default () => (
-  <Container>
-    <Nav />
-    <Header text="Resources" />
-    <p>Here's a list of useful links for different categories</p>
-  </Container>
-)
+  <Layout>
+    <h1>Resources</h1>
+    <p>Here's a list of useful resources for development and other topics:</p>
+    <p>
+      <span role="img" aria-label="building construction">
+        🚧🏗️
+      </span>
+    </p>
+  </Layout>
+);

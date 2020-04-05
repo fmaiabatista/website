@@ -1,15 +1,20 @@
-import React from "react"
-import { Link } from "gatsby"
-import Container from "../components/container"
-import Nav from "../components/nav"
-import Header from "../components/header"
+import React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
 
-export default () => (
-  <Container>
-    <Nav />
-    <Header text="404 Page not found." />
-    <div>
-      <Link to="/">Go back</Link>
-    </div>
-  </Container>
-)
+const NotFound = () => (
+  <Layout>
+    <h1>404 Not Found</h1>
+    <p>
+      <span role="img" aria-label="face screaming in fear">
+        😱
+      </span>{" "}
+      Ops, seems like you're lost.
+    </p>
+    <p>The page you're looking for was not found or doesn't exist.</p>
+    <p>It's alright - it happens to us all.</p>
+    <Link to="/">&larr; Go back home!</Link>
+  </Layout>
+);
+
+export default NotFound;
