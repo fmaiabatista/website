@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./nav.module.css";
 import { Link } from "gatsby";
+import Emoji from "./emoji";
 
 export default () => (
   <nav className={styles.nav}>
-    <span role="img" aria-label="man technologist">
-      👨‍💻 Felipe Maia
-    </span>
+    <div className={styles.logo}>
+      <Emoji icon="👨‍💻" label="man technologist" />
+      <span className={styles.name}> Felipe Maia</span>
+    </div>
     <ul className={styles.list}>
       <li>
         <Link to="/">Home</Link>

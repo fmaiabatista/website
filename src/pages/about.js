@@ -1,20 +1,19 @@
 import React from "react";
 import Layout from "../components/layout";
+import Emoji from "../components/emoji";
 
 const About = () => (
   <Layout>
     <h1>About</h1>
-    <p>Coming soon</p>
     <p>
-      <span role="img" aria-label="building construction">
-        🚧🏗️
-      </span>
+      <Emoji icon="🏗️" label="building construction" /> Coming soon
     </p>
-    {/* <p>Frontend Developer</p>
+
+    {/*
     <ul>
-      <li>React</li>
-      <li>JS / Typescript</li>
-      <li>CSS</li>
+      <li>Software Engineer</li>
+      <li>Frontend Developer</li>
+      <li>JavaScript Enthusiast</li>
     </ul> */}
   </Layout>
 );

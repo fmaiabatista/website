@@ -1,7 +1,6 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 1.16rem;
 }
 
 .nav .list {
@@ -11,4 +10,10 @@
 
 .nav .list li:not(:first-child) {
   margin-left: 12px;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo .name {
+    display: none;
+  }
 }
