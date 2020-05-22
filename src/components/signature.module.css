@@ -1,0 +1,15 @@
+.path {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+}
+
+.animate {
+  animation-delay: 1s;
+  animation: dash 0.7s cubic-bezier(0.09, 0.59, 1, 0.63) both;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

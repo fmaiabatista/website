@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../components/layout";
 import Emoji from "../components/emoji";
+import Title from "../components/title";
 
 const About = () => (
   <Layout>
-    <h1>About</h1>
+    <Title title="About" tagline="A bit more about me" />
     <p>
       <Emoji icon="🏗️" label="building construction" /> Coming soon
     </p>

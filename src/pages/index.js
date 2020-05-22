@@ -1,43 +1,31 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Emoji from "../components/emoji";
+import PagesList from "../components/pagesList";
 import Signature from "../components/signature";
+import Title from "../components/title";
 
 export default () => (
   <Layout>
-    <h1>Bem-vindo</h1>
-    <p>Hi, there.</p>
+    <Title title="Bem-vindo" />
     <p>
-      If you made it to my page it means either that I'm already popular or
-      maybe you have no idea what you're looking for.
+      <Emoji icon="👋" label="waving hand" /> Hi, there.
     </p>
     <p>
-      If it's the first case, I'm flattered!{" "}
-      <Emoji icon="🤩" label="star-struck" />
+      I'm Felipe, BSc. in Computer Engineering and Developer/Designer whose
+      mission is
     </p>
+    <pre>
+      <code>To make the Web EASY, CLEAR and BEAUTIFUL</code>
+    </pre>
     <p>
-      You can learn more about me in the following pages (or just use the nav):
+      If this piqued your interest, you can check the following pages for more
+      information:
     </p>
-    <ul>
-      <li>
-        <Link to="/about/">About</Link>
-      </li>
-      <li>
-        <Link to="/uses/">Uses</Link>
-      </li>
-      <li>
-        <Link to="/resources/">Resources</Link>
-      </li>
-    </ul>
-    <p>
-      Now, if you still don't know what you're after here - I suggest you go for
-      a walk and get your eye off the screen a bit (then come back later and
-      check my other pages). <Emoji icon="🙄" label="face with rolling eyes" />
-    </p>
-    <p>In any case, have fun!</p>
+    <PagesList excludedPages={["Home"]} />
+    <p>Thanks for stopping by, have fun!</p>
     <div style={{ display: "flex", alignItems: "center" }}>
-      <span style={{ marginRight: "1rem" }}>-</span>
+      <span style={{ marginRight: "0.4rem" }}>-</span>
       <Signature width="32px" />
     </div>
   </Layout>

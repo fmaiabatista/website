@@ -3,11 +3,11 @@ import Layout from "../components/layout";
 import Emoji from "../components/emoji";
 import Title from "../components/title";
 
-const Resources = () => (
+const Projects = () => (
   <Layout>
     <Title
-      title="Resources"
-      tagline="Because Quality of Life matters and good tooling helps do the job"
+      title="Projects"
+      tagline="Showing off side-projects I do in my spare time"
     />
     <p>
       <Emoji icon="🏗️" label="building construction" /> Coming soon
@@ -15,4 +15,4 @@ const Resources = () => (
   </Layout>
 );
 
-export default Resources;
+export default Projects;
