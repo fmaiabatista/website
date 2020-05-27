@@ -1,8 +1,8 @@
 import React from "react";
 
-const Emoji = ({ icon, label }) => {
+const Emoji = ({ icon, label, margin = "0" }) => {
   return (
-    <span role="img" arial-label={label}>
+    <span role="img" arial-label={label} style={{ margin }}>
       {icon}
     </span>
   );
