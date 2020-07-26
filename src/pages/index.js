@@ -1,32 +1,46 @@
 import React from "react";
 import Layout from "../components/layout";
-import Emoji from "../components/emoji";
-import PagesList from "../components/pagesList";
-import Signature from "../components/signature";
 import Title from "../components/title";
+import Card from "../components/card";
+
+const cards = [
+  {
+    title: "Design",
+    elements: ["a1", "a2", "a3"],
+  },
+  {
+    title: "Front-end",
+    elements: ["b1", "b2", "b3"],
+  },
+  {
+    title: "Back-end",
+    elements: ["c1", "c2", "c3"],
+  },
+];
 
 export default () => (
   <Layout>
-    <Title title="Bem-vindo" />
-    <p>
-      <Emoji icon="👋" label="waving hand" /> Hi, there.
+    <Title title="Hi, there." emoji={{ icon: "👋", label: "waving hand" }} />
+    <p style={{ width: "50%" }}>
+      Sit cupidatat aute labore aliqua ipsum laboris laboris ullamco labore eu.
+      Ut reprehenderit in in esse do sunt. Commodo do dolore nulla cupidatat
+      proident aliquip sit culpa aliquip exercitation amet.
     </p>
-    <p>
-      I'm Felipe,
-      <br />
-      BSc. in Computer Engineering, Developer and Designer whose mission is
-    </p>
-    <pre
-      style={{ padding: "12px", background: "#f3f3f3", borderRadius: "4px" }}
+
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "space-between",
+      }}
     >
-      <code>To make the Web EASY, CLEAR and BEAUTIFUL</code>
-    </pre>
-    <p>If you want to know more, you can check the following pages:</p>
-    <PagesList excludedPages={["Home"]} />
-    <p>Thanks for stopping by, have fun and stay safe!</p>
-    <div style={{ display: "flex", alignItems: "center" }}>
-      <span style={{ marginRight: "0.4rem" }}>-</span>
-      <Signature width="32px" />
+      {cards.map(card => (
+        <Card title={card.title}>
+          {card.elements.map(element => (
+            <span>{element}</span>
+          ))}
+        </Card>
+      ))}
     </div>
   </Layout>
 );

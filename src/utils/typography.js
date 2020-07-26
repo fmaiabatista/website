@@ -1,7 +1,6 @@
 import Typography from "typography";
-import altonTheme from "typography-theme-alton";
+import theme from "typography-theme-lincoln";
 
-const typography = new Typography(altonTheme);
+const typography = new Typography(theme);
 
-export const { scale, rhythm, options } = typography;
 export default typography;
