@@ -1,0 +1,37 @@
+.technology {
+  align-items: center;
+  cursor: default;
+  display: flex;
+  filter: grayscale();
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
+.technology:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.technology img {
+  transform: translateY(20px);
+  transition: all 0.2s ease-in-out;
+}
+
+.technology:hover img {
+  transform: translateY(-5px);
+}
+
+.technology span {
+  display: inline-block;
+  font-size: 0.7rem;
+  opacity: 0;
+  transform: translateY(-18px);
+  transition: all 0.2s ease-in-out;
+}
+
+.technology:hover span {
+  opacity: 1;
+  transform: translateY(0px);
+}

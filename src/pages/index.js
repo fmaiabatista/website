@@ -1,20 +1,36 @@
 import React from "react";
+import styles from "./index.module.css";
 import Layout from "../components/layout";
 import Title from "../components/title";
 import Card from "../components/card";
+import xdLogoPath from "../assets/200px-Adobe_XD_CC_icon.png";
+import figmaLogoPath from "../assets/200px-Figma-logo.png";
+import illustratorLogoPath from "../assets/200px-Adobe_Illustrator_CC_icon.png";
 
 const cards = [
   {
     title: "Design",
-    elements: ["a1", "a2", "a3"],
+    elements: [
+      { src: xdLogoPath, name: "XD" },
+      { src: illustratorLogoPath, name: "Illustrator" },
+      { src: figmaLogoPath, name: "Figma" },
+    ],
   },
   {
     title: "Front-end",
-    elements: ["b1", "b2", "b3"],
+    elements: [
+      { src: xdLogoPath, name: "XD" },
+      { src: illustratorLogoPath, name: "Illustrator" },
+      { src: figmaLogoPath, name: "Figma" },
+    ],
   },
   {
     title: "Back-end",
-    elements: ["c1", "c2", "c3"],
+    elements: [
+      { src: xdLogoPath, name: "XD" },
+      { src: illustratorLogoPath, name: "Illustrator" },
+      { src: figmaLogoPath, name: "Figma" },
+    ],
   },
 ];
 
@@ -34,13 +50,22 @@ export default () => (
         justifyContent: "space-between",
       }}
     >
-      {cards.map(card => (
-        <Card title={card.title}>
-          {card.elements.map(element => (
-            <span>{element}</span>
+      {cards.map((card, i) => (
+        <Card title={card.title} key={i}>
+          {card.elements.map((element, j) => (
+            <div className={styles.technology} key={j}>
+              <img
+                src={element.src}
+                alt={element.name}
+                style={{ height: "48px", marginBottom: "0" }}
+              />
+              <span>{element.name}</span>
+            </div>
           ))}
         </Card>
       ))}
     </div>
+
+    <h2>Projects</h2>
   </Layout>
 );
