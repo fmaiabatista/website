@@ -7,7 +7,7 @@ const Resources = () => (
   <Layout>
     <Title
       title="Resources"
-      tagline="Because Quality of Life matters and good tooling helps do the job"
+      tagline="Because quality of life matters and good tools deserve to be shared"
     />
     <p>
       <Emoji icon="🏗️" label="building construction" /> Coming soon
