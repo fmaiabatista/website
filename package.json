@@ -14,7 +14,8 @@
     "eslint-check": "eslint --print-config src/pages/index.js | eslint-config-prettier-check"
   },
   "dependencies": {
-    "gatsby": "^2.13.39",
+    "gatsby": "^2.24.53",
+    "gatsby-cli": "^2.12.91",
     "gatsby-plugin-typography": "^2.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

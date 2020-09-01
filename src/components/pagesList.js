@@ -8,16 +8,12 @@ const PagesList = ({ listClass = null, excludedPages = [] }) => {
       title: "Home",
     },
     {
-      path: "/about/",
-      title: "About",
+      path: "/portfolio/",
+      title: "Portfolio",
     },
     {
       path: "/uses/",
       title: "Uses",
-    },
-    {
-      path: "/projects/",
-      title: "Projects",
     },
     {
       path: "/resources/",
