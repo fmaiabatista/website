@@ -67,5 +67,19 @@ export default () => (
     </div>
 
     <h2>Projects</h2>
+
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "space-between",
+      }}
+    >
+      <ul>
+        <li>abc</li>
+        <li>abc</li>
+        <li>abc</li>
+      </ul>
+    </div>
   </Layout>
 );
