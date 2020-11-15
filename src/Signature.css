@@ -1,0 +1,30 @@
+.signature {
+  position: absolute;
+  width: 60px;
+  bottom: -70px;
+  right: -35px;
+}
+
+.signature path {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+}
+
+.animate-write {
+  animation: write 0.9s cubic-bezier(0.09, 0.59, 1, 0.63) both;
+  animation-delay: 0.5s;
+}
+
+@keyframes write {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .signature {
+    width: 70px;
+    bottom: -20px;
+    right: 195px;
+  }
+}
