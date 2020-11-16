@@ -7,7 +7,7 @@ import { AiOutlineMessage } from 'react-icons/ai';
 function Links() {
   return (
     <div className="Links">
-      <div className="icon-li border-r">
+      <div className="icon-li">
         <div className="cube-wrapper">
           <div className="cube">
             <div className="face front">
@@ -21,7 +21,8 @@ function Links() {
           </div>
         </div>
       </div>
-      <div className="icon-gh border-b">
+      <div className="grad-to-top"></div>
+      <div className="icon-gh">
         <div className="cube-wrapper">
           <div className="cube">
             <div className="face front">
@@ -35,7 +36,12 @@ function Links() {
           </div>
         </div>
       </div>
-      <div className="icon-cp border-t">
+      
+      <div className="grad-to-left"></div>
+      <div className="grad-mid"></div>
+      <div className="grad-to-right"></div>
+      
+      <div className="icon-cp">
         <div className="cube-wrapper">
           <div className="cube">
             <div className="face front">
@@ -49,7 +55,8 @@ function Links() {
           </div>
         </div>
       </div>
-      <div className="icon-em border-l">
+      <div className="grad-to-bottom"></div>
+      <div className="icon-em">
         <div className="cube-wrapper">
           <div className="cube">
             <div className="face front">
